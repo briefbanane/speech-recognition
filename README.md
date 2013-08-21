@@ -1,5 +1,5 @@
-Simple speech recognition working with MFCC
-===========================================
+Simple speech recognition using MFCC
+====================================
 
 The program contains per se no database. Users create their personal word list by dictating words using a microphone. All words from this word list can later be recognised by the program.
 
