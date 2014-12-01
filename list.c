@@ -18,7 +18,7 @@ void new_word(mfcc_frame *frames, unsigned int n, char *name)
 	unsigned int i = 0, j = 0;
 	chdir("words");
 	f = fopen(name, "w");
-	fprintf(f, "%i\n", n);
+	fprintf(f, "%u\n", n);
 	//In der Datei weden einfach alle Merkmale von Leerzeichen getrennt ausgegeben
 	for (i = 0; i < n; i++)
 		for (j = 0; j < N_MFCC; j++)
@@ -40,7 +40,7 @@ int get_list(word *head)
 	while (dentry != NULL)
 	{
 		//Ignoriere die Standardeintraege
-		if (!memcmp(dentry->d_name, ".", 2) || !memcmp(dentry->d_name, "..", 3))
+		if (!memcmp(dentry->d_name, ".", 1))
 		{
 			dentry = readdir(d);
 			continue;
