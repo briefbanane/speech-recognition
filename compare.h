@@ -11,6 +11,7 @@
 /*
  * Vergleicht die beiden uebergebenen Vektoren von MFCC-Auspraegungen und liefert einen Wert zurueck,
  * der die Korrelation angibt. Je kleiner dieser ist, desto aehnlicher sind die beiden Vektoren.
+ * Als Algorithmus wird Dynamic-Time-Warping benutzt.
  * <<<INPUT>>>
  * (mfcc_frame) mfcc_frames1	Der erste Vektor mit den MFCC-Merkmale
  * (unsigned int) n1		Die Laenge des zweiten Vektors
